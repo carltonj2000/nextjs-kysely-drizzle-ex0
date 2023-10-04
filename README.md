@@ -19,6 +19,11 @@ npm run drizzle:migrate
 turso db shell movies
 #> INSERT INTO movies (id, title, releaseYear, rating) VALUES (101, 'Scarface', 1983, 10);
 #> SELECT * FROM movies;
+# install kysely for quering db
+npm install kysely
+npm install @libsql/kysely-libsql
+# for a weird warning added the line below
+npm install utf-8-validate bufferutil encoding
 ```
 
 ## Code History

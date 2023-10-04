@@ -7,15 +7,20 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "drizzle:generate": "drizzle-kit generate:sqlite --out ./drizzle/migrations --breakpoints --schema=./drizzle/schema.ts",
+    "drizzle:generate": "drizzle-kit generate:sqlite --out ./drizzle/migrations --breakpoints --schema=./src/lib/schema.ts",
     "drizzle:migrate": "tsx drizzle/migrate2turso"
   },
   "dependencies": {
     "@libsql/client": "^0.3.5",
+    "@libsql/kysely-libsql": "^0.3.0",
+    "bufferutil": "^4.0.7",
     "drizzle-orm": "^0.28.6",
+    "encoding": "^0.1.13",
+    "kysely": "^0.26.3",
     "next": "13.5.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "utf-8-validate": "^6.0.3"
   },
   "devDependencies": {
     "@types/node": "^20",

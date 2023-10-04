@@ -6,6 +6,3 @@ export const movies = sqliteTable("movies", {
   releaseYear: integer("releaseYear"),
   rating: integer("rating"),
 });
-
-export type MovieI = typeof movies.$inferInsert;
-export type MovieS = typeof movies.$inferSelect;
